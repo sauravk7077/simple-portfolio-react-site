@@ -1,17 +1,55 @@
 import React from "react";
-import {Link} from "react-router-dom"
 
-function NavBar(props) {
-    return (
-        <div className="flexBox">
-            <h1>Portfolio Site</h1>
-            <div>
-                <div>
-                    <a href="">Home</a>
+class NavBar extends React.Component{
+    constructor() {
+        super();
+        this.state = {
+            menuButtonEnabled: false
+        }
+    }
+
+    handleClick= (e)=> {
+        this.setState(prev=>(
+            {
+                menuButtonEnabled: !prev.menuButtonEnabled
+            }
+        ))
+    }
+
+    render() {
+        let menuBar;
+        if(this.state.menuButtonEnabled){
+            menuBar = (
+                <div className="flex nav">
+                    <h1 className="brand">Portfolio Site</h1>                    
+                    <div className="menuContainer flex">
+                        <div className="link flex">
+                            <a href="#home">Home</a>
+                        </div>
+                        <div className="link flex">
+                            <a href="#">About</a>
+                        </div>
+                        <div className="link flex">
+                            <a href="#">Portfolio</a>
+                        </div>
+                        <div className="link flex">
+                            <a href="#">Contact</a>
+                        </div>
+                        <div className="flex"><button onClick={this.handleClick}>X</button></div>
+                    </div>
+                    
                 </div>
-            </div>
-        </div>
-    )
+            )
+        }   else {
+        menuBar = (
+                <div className="flex nav">
+                    <h1 className="brand">Portfolio Site</h1>
+                    <div className="flex menuHandle"><button onClick={this.handleClick}>Menu</button></div>
+                </div>
+            )
+        }
+        return menuBar;
+    }
 }
 
 export default NavBar;

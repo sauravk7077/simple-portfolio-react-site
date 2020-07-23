@@ -1,5 +1,11 @@
+*{
+  color: rgb(78, 78, 78);
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,11 +13,101 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a{
+  text-decoration: none;
 }
 
-.flexBox{
+.flex{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+}
+
+/* 
+----------------
+NavBar
+----------------
+*/
+
+.brand{
+  color: #000;
+}
+
+.nav{
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.menuContainer{
+  flex-basis: 500px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menuHandle{
+  align-items: center;
+}
+
+.link{
+  align-items: center;
+  flex-basis: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+}
+
+/* 
+----------------
+Content Section
+----------------
+*/
+
+section{
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+----------------
+Home
+----------------
+*/
+
+#home{
+  flex-direction: column;
+}
+
+/* 
+----------------
+Portfolio
+----------------
+*/
+
+#portfolio{
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* Card */
+
+.card{
+  margin:auto;
+  width: 400px;
+  justify-items: center;
+  align-items: center;
+}
+
+
+/* 
+----------------
+Footer
+----------------
+*/
+
+footer{
+  padding: 10px;
+  align-items: center;
+  font-size: 1em;
 }
