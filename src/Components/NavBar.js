@@ -1,4 +1,6 @@
 import React from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faHome, faSuitcase} from "@fortawesome/free-solid-svg-icons"
 
 class NavBar extends React.Component{
     constructor() {
@@ -24,18 +26,18 @@ class NavBar extends React.Component{
                     <h1 className="brand">Portfolio Site</h1>                    
                     <div className="menuContainer flex">
                         <div className="link flex button">
-                            <a href="#home">Home</a>
+                            <a href="#home"><FontAwesomeIcon icon={faHome}/> Home</a>
                         </div>
                         <div className="link flex button">
                             <a href="#">About</a>
                         </div>
                         <div className="link flex button">
-                            <a href="#portfolio">Portfolio</a>
+                            <a href="#portfolio"><FontAwesomeIcon icon={faSuitcase}/> Portfolio</a>
                         </div>
                         <div className="link flex button">
                             <a href="#">Contact</a>
                         </div>
-                        <div className="flex"><button onClick={this.handleClick}>X</button></div>
+                        <div className="flex"><button onClick={this.handleClick} className="button">X</button></div>
                     </div>
                     
                 </div>
@@ -44,7 +46,7 @@ class NavBar extends React.Component{
         menuBar = (
                 <div className="flex nav">
                     <h1 className="brand">Portfolio Site</h1>
-                    <div className="flex menuHandle"><button onClick={this.handleClick}>Menu</button></div>
+                    <div className="flex menuHandle"><button onClick={this.handleClick} className="button">Menu</button></div>
                 </div>
             )
         }
