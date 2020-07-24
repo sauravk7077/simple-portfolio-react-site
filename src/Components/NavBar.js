@@ -23,16 +23,16 @@ class NavBar extends React.Component{
                 <div className="flex nav">
                     <h1 className="brand">Portfolio Site</h1>                    
                     <div className="menuContainer flex">
-                        <div className="link flex">
+                        <div className="link flex button">
                             <a href="#home">Home</a>
                         </div>
-                        <div className="link flex">
+                        <div className="link flex button">
                             <a href="#">About</a>
                         </div>
-                        <div className="link flex">
-                            <a href="#">Portfolio</a>
+                        <div className="link flex button">
+                            <a href="#portfolio">Portfolio</a>
                         </div>
-                        <div className="link flex">
+                        <div className="link flex button">
                             <a href="#">Contact</a>
                         </div>
                         <div className="flex"><button onClick={this.handleClick}>X</button></div>
