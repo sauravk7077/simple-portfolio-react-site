@@ -23,7 +23,7 @@ class NavBar extends React.Component{
         if(this.state.menuButtonEnabled){
             menuBar = (
                 <div className="flex nav">
-                    <h1 className="brand">Portfolio Site</h1>                    
+                    <div className="brand">Portfolio Site</div>                    
                     <div className="menuContainer flex">
                         <div className="link flex button">
                             <a href="#home"><FontAwesomeIcon icon={faHome}/> Home</a>
@@ -45,7 +45,7 @@ class NavBar extends React.Component{
         }   else {
         menuBar = (
                 <div className="flex nav">
-                    <h1 className="brand">Portfolio Site</h1>
+                    <div className="brand">Portfolio Site</div>
                     <div className="flex menuHandle"><button onClick={this.handleClick} className="button">Menu</button></div>
                 </div>
             )

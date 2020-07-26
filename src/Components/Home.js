@@ -5,9 +5,17 @@ function Home() {
         <section id="home" className="flex">
             <div>
                 <h1>My Portfolio Page</h1>
+                <h2 className="homeText">
+                    <span>Duis egestas</span><span>augue at malesuada </span>convallis.
+                </h2>
             </div>
-            <div>
-                <a href="#portfolio">Visit my Portfolio</a>
+            <div className="flex">
+                <div className='button btn-outline wide'>
+                    <a href="#portfolio">My Portfolio</a>
+                </div>
+                <div className='button btn-solid wide'>
+                <a href="#portfolio">Contact Me</a>
+            </div>
             </div>
         </section>
     )
