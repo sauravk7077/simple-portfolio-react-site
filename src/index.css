@@ -27,6 +27,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(to top,var(--dark-blue), var(--blue));
 }
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+
+::selection {
+  color: var(--neon-green);
+  background: var(--neon-blue);
+}
+
+*::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  background-color: var(--blue-light);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background: linear-gradient(var(--neon-green),var(--neon-blue));
+}
 
 a{
   text-decoration: none;
@@ -104,6 +127,7 @@ section{
   padding: 10px;
   margin: 5px;
   cursor: pointer;
+  transition: all 0.4s;
 }
 
 .btn-outline{
@@ -202,11 +226,11 @@ Portfolio
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 200px;
+  flex-basis: 300px;
   width: 300px;
-  border-radius: 5%;
+  border-radius: 50%;
   overflow: hidden;
-  background: var(--blue)
+  box-shadow: 0 0 5px 1px var(--grey-light);
 }
 .card-image img{
   filter: grayscale(100%);
