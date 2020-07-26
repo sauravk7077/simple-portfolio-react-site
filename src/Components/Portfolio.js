@@ -12,10 +12,12 @@ class Portfolio extends React.Component{
 
     render() {
         const c = contents.map(e=> (
-            <Card key={e.id} title={e.title} src={`./images/${e.img}`} detail={e.detail} />
+            <Card key={e.id} title={e.title} src={`./images/${e.img}`} detail={e.detail} git={e.git}/>
         ))
         return (
-            <section id="portfolio" className="flex">{c}</section>
+            <section id="portfolio" className="flex">
+                {c}
+            </section>
         );
     }
 }
