@@ -3,7 +3,7 @@ import React from "react";
 
 function Home() {
     return(
-        <section id="home" className="flex">
+        <section id="home" className="flex column">
             <div>
                 <h1>My Portfolio Page</h1>
                 <h2 className="homeText">
