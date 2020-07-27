@@ -15,7 +15,7 @@ function Home() {
                     <a href="#portfolio">My Portfolio</a>
                 </div>
                 <div className='button btn-solid wide'>
-                <a href="#portfolio">Contact Me</a>
+                <a href="#contact">Contact Me</a>
             </div>
             </div>
         </section>

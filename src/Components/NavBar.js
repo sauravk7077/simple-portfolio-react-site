@@ -29,13 +29,13 @@ class NavBar extends React.Component{
                             <a href="#home"><FontAwesomeIcon icon={faHome}/> Home</a>
                         </div>
                         <div className="link flex button">
-                            <a href="#">About</a>
+                            <a href="#about">About</a>
                         </div>
                         <div className="link flex button">
                             <a href="#portfolio"><FontAwesomeIcon icon={faSuitcase}/> Portfolio</a>
                         </div>
                         <div className="link flex button">
-                            <a href="#">Contact</a>
+                            <a href="#contact">Contact</a>
                         </div>
                         <div className="flex"><button onClick={this.handleClick} className="button">X</button></div>
                     </div>
