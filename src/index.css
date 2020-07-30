@@ -26,6 +26,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(to top,var(--dark-blue), var(--blue));
+  overflow-x: hidden;
 }
 ::-moz-selection { /* Code for Firefox */
   color: red;
@@ -341,4 +342,33 @@ footer{
 footer p, footer p *{
   font-size: 1em;
   color: var(--grey);
+}
+
+
+/* 
+----------------
+Mobile
+----------------
+*/
+
+
+@media (max-width: 600px) {
+  .wide{
+    width: 80px;
+    font-size: 0.8em;
+  }
+
+  .portfolio{
+    width: 300px;
+    justify-content: flex-start;
+  }
+
+  .card-image{
+    flex-basis: 200px;
+    width: 200px;
+  }
+
+  input, textarea{
+    width: 80vw;
+  }
 }
