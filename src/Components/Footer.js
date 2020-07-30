@@ -5,7 +5,7 @@ import {faCopyright} from "@fortawesome/free-regular-svg-icons";
 function Footer(props) {
     return (
         <footer className="flex">
-            <FontAwesomeIcon icon={faCopyright}/> Me
+            <p><FontAwesomeIcon icon={faCopyright}/> Me</p>
         </footer>
     )
 }
