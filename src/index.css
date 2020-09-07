@@ -353,19 +353,27 @@ Mobile
 
 
 @media (max-width: 600px) {
+  h1{
+    font-size: 2rem;
+  }
+  .homeText{
+    font-size: 2rem;
+    line-height: 0.7em;
+  }
+
   .wide{
     width: 80px;
     font-size: 0.8em;
   }
 
   .portfolio{
-    width: 300px;
+    width: 80vw;
     justify-content: flex-start;
   }
 
   .card-image{
-    flex-basis: 200px;
-    width: 200px;
+    flex-basis: 40vw;
+    width: 40vw;
   }
 
   input, textarea{
