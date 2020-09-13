@@ -19,8 +19,8 @@ class About extends React.Component{
     }
 
     render() {
-        const data = this.state.data.map(e=>(
-            <div className="flex column">
+        const data = this.state.data.map((e,i)=>(
+            <div className="flex column" key={i}>
                 <div className="heading">
                     <h2>{e.heading}</h2>
                 </div>

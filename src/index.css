@@ -239,6 +239,8 @@ Portfolio
   border-radius: 2%;
 }
 
+
+
 .card-wrapper{
   /* box-shadow: 1px 3px 3px rgba(0,0,0,0.2); */
   transform-style: preserve-3d;
@@ -378,5 +380,16 @@ Mobile
 
   input, textarea{
     width: 80vw;
+  }
+}
+
+/* Animations */
+
+@keyframes bounce{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
   }
 }
