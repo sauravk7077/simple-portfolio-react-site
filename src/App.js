@@ -5,6 +5,8 @@ import About from "./Components/About";
 import Portfolio from "./Components/Portfolio";
 import Contact from ".//Components/Contact";
 import Footer from "./Components/Footer";
+import Flip from 'react-reveal/Flip';
+
 
 function App() {
   return (
@@ -12,11 +14,10 @@ function App() {
       <NavBar />
       <Home />
       <About/>
-      <h1 className="portfolio-title">Portfolio</h1>
+      <h1 className="portfolio-title"><Flip bottom delay={500}>Portfolio</Flip></h1>
       <Portfolio />
-      <hr />
+      <h1 className="portfolio-title"><Flip bottom delay={500}>Contact</Flip></h1>
       <Contact/>
-      <hr />
       <Footer />
     </div>
   );

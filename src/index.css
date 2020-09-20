@@ -28,6 +28,13 @@ body {
   background: linear-gradient(to top,var(--dark-blue), var(--blue));
   overflow-x: hidden;
 }
+
+*:focus{
+  border: 2px solid var(--neon-green);
+  outline: none;
+  box-shadow: 0 0 5px 1px var(--neon-green);
+
+}
 ::-moz-selection { /* Code for Firefox */
   color: red;
   background: yellow;
@@ -81,6 +88,23 @@ p{
 NavBar
 ----------------
 */
+
+svg{
+  height: 2.5rem;
+  width: 18em;
+}
+
+.text{
+  color: var(--white);
+  font-size: 2.4rem;
+  font-family: 'Lilita One', cursive;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  fill: transparent;
+  stroke: url(#grad1);
+  stroke-dasharray: 200;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite
+}
 
 .brand{
   color: var(--white);
@@ -184,6 +208,7 @@ section{
   width: 200px;
 }
 h1{
+  text-align: center;
   font-size: 2.5em;
 }
 h2{
@@ -231,12 +256,13 @@ Portfolio
 .card{
   margin: 20px;
   padding: 10px;
-  width: 400px;
-  justify-items: center;
+  width: 330px;
+  justify-content: center;
   align-items: center;
   transform-origin: center center;
   background-color: var(--blue);
   border-radius: 2%;
+  height: 600px;
 }
 
 
@@ -270,8 +296,8 @@ Portfolio
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 300px;
-  width: 300px;
+  flex-basis: 250px;
+  width: 250px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 5px 1px var(--grey-light);
@@ -307,6 +333,11 @@ Contact
 ----------------
 */
 
+
+#contact{
+  background: hsl(239, 50%, 10%);
+}
+
 input, textarea{
   width: 400px;
   background-color: var(--blue);
@@ -327,6 +358,28 @@ textarea{
 .form-group *{
   display: block;
   margin: 5px;
+}
+
+.contact-btn{
+  border: 1px solid #fff;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 5%;
+  font-size: 4em;
+}
+
+.contact-btn:hover{
+  border-color: var(--neon-blue);
+  background-color: var(--blue);
+  box-shadow: inset 0 0 1px 1px #1da1f2;
+}
+
+.contact-btn:hover svg path{
+  /* fill: url(#grad1); */
+  fill:var(--neon-blue);
 }
 
 
@@ -357,6 +410,13 @@ Mobile
 @media (max-width: 600px) {
   h1{
     font-size: 2rem;
+  }
+  svg{
+    height: 2.3rem;
+    width: 17em;
+  }
+  .text{
+    font-size: 2.2rem;
   }
   .homeText{
     font-size: 2rem;
@@ -391,5 +451,14 @@ Mobile
   }
   to{
     opacity: 1;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
   }
 }

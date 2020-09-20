@@ -5,7 +5,7 @@ import {faGithub} from "@fortawesome/free-brands-svg-icons"
 function Card(props) {
     const [show, setShow] = useState(false);
     return(
-        <Fade big>
+        <Fade bottom>
             <div className="card flex column">
                 <div className="card-wrapper flex column">
                     <div className="main-card flex column">

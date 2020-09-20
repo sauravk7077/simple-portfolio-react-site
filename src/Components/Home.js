@@ -1,11 +1,13 @@
 import React from "react";
 import Pulse from "react-reveal/Pulse"
+import {ReactComponent as ReactLogo} from "../text.svg";
 
 function Home() {
     return(
         <section id="home" className="flex column">
             <div>
-                <Pulse duration={1500} delay={2000} forever><h1>My Portfolio Page</h1></Pulse>
+                <Pulse duration={1500} delay={500} forever><ReactLogo/></Pulse>
+                
                 <h2 className="homeText">
                     <span>Web Developer</span><span>Javascript, Python </span>Frontend, Backend.
                 </h2>
